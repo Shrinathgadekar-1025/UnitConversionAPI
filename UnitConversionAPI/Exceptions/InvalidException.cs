@@ -1,4 +1,4 @@
-﻿namespace UnitConversionAPI.Extensions
+﻿namespace UnitConversionAPI.Exceptions
 {
     public class InvalidException : Exception
     {

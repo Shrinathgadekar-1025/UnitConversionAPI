@@ -1,5 +1,5 @@
 ﻿using System.Text.Json;
-using UnitConversionAPI.Extensions;
+using UnitConversionAPI.Exceptions;
 
 namespace UnitConversionAPI.Middleware
 {
