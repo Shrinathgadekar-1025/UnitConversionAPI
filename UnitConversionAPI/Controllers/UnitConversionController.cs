@@ -3,6 +3,9 @@ using UnitConversionAPI.Services;
 
 namespace UnitConversionAPI.Controllers
 {
+    /// <summary>
+    /// Performs unit conversions.
+    /// </summary>
     [ApiController]
     [Route("api/[controller]")]
     public class UnitConversionController : ControllerBase
@@ -14,6 +17,11 @@ namespace UnitConversionAPI.Controllers
             _conversionService = conversionService;
         }
 
+        /// <summary>
+        /// Converts one unit into another.
+        /// </summary>
+        /// <param name="request">Conversion request.</param>
+        /// <returns>Converted result.</returns>
         [HttpPost("convert")]
         public IActionResult Convert ([FromBody] Models.ConversionRequest request)
         {
