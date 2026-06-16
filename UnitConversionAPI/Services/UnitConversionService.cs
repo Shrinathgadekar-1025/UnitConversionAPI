@@ -1,4 +1,4 @@
-﻿using UnitConversionAPI.Extensions;
+﻿using UnitConversionAPI.Exceptions;
 using UnitConversionAPI.Models;
 
 namespace UnitConversionAPI.Services
