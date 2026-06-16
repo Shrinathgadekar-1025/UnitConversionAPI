@@ -1,4 +1,5 @@
-﻿using UnitConversionAPI.Models;
+﻿using UnitConversionAPI.Extensions;
+using UnitConversionAPI.Models;
 
 namespace UnitConversionAPI.Services
 {
@@ -29,7 +30,7 @@ namespace UnitConversionAPI.Services
             }
             else
             {
-                throw new ArgumentException("Unsupported conversion.");
+                throw new InvalidException($"Conversion from '{request.FromUnit}' to '{request.ToUnit}' is not supported.");
             }
 
             return new ConversionResponse

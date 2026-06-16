@@ -11,9 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Middleware\" />
     <Folder Include="Exceptions\" />
-    <Folder Include="Extensions\" />
   </ItemGroup>
 
 </Project>
